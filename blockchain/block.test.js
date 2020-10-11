@@ -26,6 +26,6 @@ describe('Block', () => {
   });
 
   it('raises the difficulty for quicky mined blocks', () => {
-    expect(Block.adjustDifficulty(block, block.timestamp + 360000)).toEqual(block.difficulty + 1);
+    expect(Block.adjustDifficulty(block, block.timestamp + 360000)).toEqual(block.difficulty+1);
   });
 });
